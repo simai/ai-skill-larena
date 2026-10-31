@@ -1,0 +1,506 @@
+[
+  {
+    "id": "object.ordering.larena.2b7a46bb4f.knowledge-consolidation-0",
+    "kind": "documented_source_observation",
+    "title": "Исторический источник навыка Larena: knowledge-consolidation-0",
+    "predicate": "source_reports",
+    "value": "До 2026-10-23 знания лежали в трёх местах: `knowledge/`, `knowledge-packs/`,\n`modules/`. Теперь всё в `knowledge/`; содержимое перенесено без потерь\n(`git log --follow` показывает историю). Имя из `knowledge_packs` в\n`activities/*.json` — это файл `knowledge/<имя>.md`.",
+    "lifecycle": "reviewed",
+    "confidence": 0.95,
+    "evidence_status": "cited_by_mirai_admission",
+    "source_refs": [
+      "repo://ai-skill-larena@2b7a46bb4f1f407da4b9cf06c69707e8397ea2aa/skills/larena/knowledge/README.md#chars=0-269"
+    ],
+    "source_spans": [
+      {
+        "unit_id": "unit.4e949b7828ea14ee.3",
+        "source_ref": "repo://ai-skill-larena@2b7a46bb4f1f407da4b9cf06c69707e8397ea2aa/skills/larena/knowledge/README.md",
+        "content_digest": "sha256:28ea14eeb4f2e0e3e087a04c9bed49231a4e380167ba293cf96b910e0f146f4e",
+        "start": 0,
+        "end": 269,
+        "quote": "До 2026-10-23 знания лежали в трёх местах: `knowledge/`, `knowledge-packs/`,\n`modules/`. Теперь всё в `knowledge/`; содержимое перенесено без потерь\n(`git log --follow` показывает историю). Имя из `knowledge_packs` в\n`activities/*.json` — это файл `knowledge/<имя>.md`."
+      }
+    ],
+    "assertion_id": "assertion.ef960105a62759d2a6bb14394bfc74ccda3f3cfb7632fd7248e26f54a7de8456"
+  },
+  {
+    "id": "object.ordering.larena.2b7a46bb4f.legacy-authority-0",
+    "kind": "documented_source_observation",
+    "title": "Исторический источник навыка Larena: legacy-authority-0",
+    "predicate": "source_reports",
+    "value": "Сначала факты, потом метод: состав пакетов и версии — только из\n[../references/canonical-package-portfolio.md](../references/canonical-package-portfolio.md)\nи из самих источников. Файлы с пометкой «справка эпохи SIMAI Laravel»\nописывают старые пакеты `simai/*` — метод годится, имена нет.",
+    "lifecycle": "reviewed",
+    "confidence": 0.95,
+    "evidence_status": "cited_by_mirai_admission",
+    "source_refs": [
+      "repo://ai-skill-larena@2b7a46bb4f1f407da4b9cf06c69707e8397ea2aa/skills/larena/knowledge/README.md#chars=0-288"
+    ],
+    "source_spans": [
+      {
+        "unit_id": "unit.4e949b78e587d078.4",
+        "source_ref": "repo://ai-skill-larena@2b7a46bb4f1f407da4b9cf06c69707e8397ea2aa/skills/larena/knowledge/README.md",
+        "content_digest": "sha256:e587d07804c33cebda9d4fa27d966f639d22a490642e968614d7b6cc3bf21a1c",
+        "start": 0,
+        "end": 288,
+        "quote": "Сначала факты, потом метод: состав пакетов и версии — только из\n[../references/canonical-package-portfolio.md](../references/canonical-package-portfolio.md)\nи из самих источников. Файлы с пометкой «справка эпохи SIMAI Laravel»\nописывают старые пакеты `simai/*` — метод годится, имена нет."
+      }
+    ],
+    "assertion_id": "assertion.a3a5dd564361bda33ee450cb2c27f06991cfb4027c231664bac9b9201e08495e"
+  },
+  {
+    "id": "object.ordering.larena.2b7a46bb4f.skill-boundaries-1",
+    "kind": "documented_source_observation",
+    "title": "Исторический источник навыка Larena: skill-boundaries-1",
+    "predicate": "source_reports",
+    "value": "- Общая разработка на Laravel, ревью и рефакторинг вне платформенных правил\n  Larena — `dev` (навык даёт знания о Larena, репозиторий ведёт `dev`).\n- SIMAI Framework, его компоненты и сборка набора `larena` — `framework`;\n  визуальный QA — `designer`.\n- Отдельный сайт документации на Docara — `docara`; метод документации — `docs`.\n- Хостинг, деплой, доступы к серверам — `ops`; вердикт о готовности к\n  релизу — `tester`.\n- Структура графа — `graph`; упорядочивание данных — `mirai`; правила\n  Федерации — `federation`.\n- Имена пакетов, новые пакеты и репозитории, лицензии — решает владелец;\n  навык готовит варианты, но не объявляет их принятыми.",
+    "lifecycle": "reviewed",
+    "confidence": 0.95,
+    "evidence_status": "cited_by_mirai_admission",
+    "source_refs": [
+      "repo://ai-skill-larena@2b7a46bb4f1f407da4b9cf06c69707e8397ea2aa/skills/larena/SKILL.md#chars=0-650"
+    ],
+    "source_spans": [
+      {
+        "unit_id": "unit.66c125b5b4e4f83b.16",
+        "source_ref": "repo://ai-skill-larena@2b7a46bb4f1f407da4b9cf06c69707e8397ea2aa/skills/larena/SKILL.md",
+        "content_digest": "sha256:b4e4f83b07d43c1abff725dc9946adf233d8300025c247b3770372fdda4e5edb",
+        "start": 0,
+        "end": 650,
+        "quote": "- Общая разработка на Laravel, ревью и рефакторинг вне платформенных правил\n  Larena — `dev` (навык даёт знания о Larena, репозиторий ведёт `dev`).\n- SIMAI Framework, его компоненты и сборка набора `larena` — `framework`;\n  визуальный QA — `designer`.\n- Отдельный сайт документации на Docara — `docara`; метод документации — `docs`.\n- Хостинг, деплой, доступы к серверам — `ops`; вердикт о готовности к\n  релизу — `tester`.\n- Структура графа — `graph`; упорядочивание данных — `mirai`; правила\n  Федерации — `federation`.\n- Имена пакетов, новые пакеты и репозитории, лицензии — решает владелец;\n  навык готовит варианты, но не объявляет их принятыми."
+      }
+    ],
+    "assertion_id": "assertion.8af09426fef2fcd2c08cc94d85db1dcccc528d8b89f4f6cc4ce62fa9a8e944f5"
+  },
+  {
+    "id": "object.ordering.larena.2b7a46bb4f.framework-host-boundary-0",
+    "kind": "documented_source_observation",
+    "title": "Исторический источник навыка Larena: framework-host-boundary-0",
+    "predicate": "source_reports",
+    "value": "SIMAI Framework (formerly \"SF5\") is the frontend/UI layer owned by `$framework`; Larena consumes it through `larena/ui` and the component package `larena`. Do not name new Larena backend contracts after the framework.",
+    "lifecycle": "reviewed",
+    "confidence": 0.95,
+    "evidence_status": "cited_by_mirai_admission",
+    "source_refs": [
+      "repo://ai-skill-larena@2b7a46bb4f1f407da4b9cf06c69707e8397ea2aa/skills/larena/kernel/platform-scope.md#chars=0-217"
+    ],
+    "source_spans": [
+      {
+        "unit_id": "unit.76f99ca8882a31fb.20",
+        "source_ref": "repo://ai-skill-larena@2b7a46bb4f1f407da4b9cf06c69707e8397ea2aa/skills/larena/kernel/platform-scope.md",
+        "content_digest": "sha256:882a31fb8f17788d3101e8799c900441c4f28e25b2acbd55997fdbe59e6429b3",
+        "start": 0,
+        "end": 217,
+        "quote": "SIMAI Framework (formerly \"SF5\") is the frontend/UI layer owned by `$framework`; Larena consumes it through `larena/ui` and the component package `larena`. Do not name new Larena backend contracts after the framework."
+      }
+    ],
+    "assertion_id": "assertion.84d264b85aaee18727c2af965c5cc79298fbdc26385288a19eeef136042886f2"
+  },
+  {
+    "id": "object.ordering.larena.2b7a46bb4f.docara-workspace-only-0",
+    "kind": "documented_source_observation",
+    "title": "Исторический источник навыка Larena: docara-workspace-only-0",
+    "predicate": "source_reports",
+    "value": "Docara (`larena/docara`) is the likely first product-level proof that Larena is\na usable CMS platform. On 2026-10-23 it is workspace-only (not in the Root\nassembly); check [../references/canonical-package-portfolio.md](../references/canonical-package-portfolio.md)\nbefore claiming it runs in the entry app.",
+    "lifecycle": "reviewed",
+    "confidence": 0.95,
+    "evidence_status": "cited_by_mirai_admission",
+    "source_refs": [
+      "repo://ai-skill-larena@2b7a46bb4f1f407da4b9cf06c69707e8397ea2aa/skills/larena/kernel/platform-scope.md#chars=0-306"
+    ],
+    "source_spans": [
+      {
+        "unit_id": "unit.76f99ca84682b5ee.23",
+        "source_ref": "repo://ai-skill-larena@2b7a46bb4f1f407da4b9cf06c69707e8397ea2aa/skills/larena/kernel/platform-scope.md",
+        "content_digest": "sha256:4682b5eed2e2a4f8a35acbd15180907a11236bb23fe74a4d4fa2aea5176cbc1a",
+        "start": 0,
+        "end": 306,
+        "quote": "Docara (`larena/docara`) is the likely first product-level proof that Larena is\na usable CMS platform. On 2026-10-23 it is workspace-only (not in the Root\nassembly); check [../references/canonical-package-portfolio.md](../references/canonical-package-portfolio.md)\nbefore claiming it runs in the entry app."
+      }
+    ],
+    "assertion_id": "assertion.46a379fe70ef09eed7b956f7cd18cbae46e1eeb2b6b0835e1078707a62cdb977"
+  },
+  {
+    "id": "object.ordering.larena.2b7a46bb4f.ui-package-parts-0",
+    "kind": "documented_source_observation",
+    "title": "Исторический источник навыка Larena: ui-package-parts-0",
+    "predicate": "source_reports",
+    "value": "| `larena/ui` (Composer package) | `SmartRegistry` with ten canonical manifests (`ui.button`, `ui.input`, `ui.textarea`, `ui.checkbox`, `ui.dropdown`, `ui.dataview`, `ui.pagination`, `ui.badge`, `ui.alert`, `ui.modal`), `Smart::render(...)`, asset activation via `core.assets`, catalog projections for people and AI | repository `simai/larena-ui` |\n| component package `larena` (admin kit) | admin Smart components `sf-table`, `sf-data-view`, `sf-property-view`, `sf-admin-menu` | source: `simai/ui-pro` (since 2026-10-23); before — `simai/ui-admin` (2026-10-22), before that `simai/larena-ui/components` |",
+    "lifecycle": "reviewed",
+    "confidence": 0.95,
+    "evidence_status": "cited_by_mirai_admission",
+    "source_refs": [
+      "repo://ai-skill-larena@2b7a46bb4f1f407da4b9cf06c69707e8397ea2aa/skills/larena/knowledge/larena-ui-components.md#chars=44-650"
+    ],
+    "source_spans": [
+      {
+        "unit_id": "unit.0e9019a6c0455da5.5",
+        "source_ref": "repo://ai-skill-larena@2b7a46bb4f1f407da4b9cf06c69707e8397ea2aa/skills/larena/knowledge/larena-ui-components.md",
+        "content_digest": "sha256:c0455da536712dfd6b9fa5af437b14e6306d3b48ef7f468ae4789c93768bccdb",
+        "start": 44,
+        "end": 650,
+        "quote": "| `larena/ui` (Composer package) | `SmartRegistry` with ten canonical manifests (`ui.button`, `ui.input`, `ui.textarea`, `ui.checkbox`, `ui.dropdown`, `ui.dataview`, `ui.pagination`, `ui.badge`, `ui.alert`, `ui.modal`), `Smart::render(...)`, asset activation via `core.assets`, catalog projections for people and AI | repository `simai/larena-ui` |\n| component package `larena` (admin kit) | admin Smart components `sf-table`, `sf-data-view`, `sf-property-view`, `sf-admin-menu` | source: `simai/ui-pro` (since 2026-10-23); before — `simai/ui-admin` (2026-10-22), before that `simai/larena-ui/components` |"
+      }
+    ],
+    "assertion_id": "assertion.03d9c76f0f3fbbaf446df83e4062564e1652acfdb7b9b00d40e30fc79c3c9576"
+  },
+  {
+    "id": "object.ordering.larena.2b7a46bb4f.kit-source-and-host-0",
+    "kind": "documented_source_observation",
+    "title": "Исторический источник навыка Larena: kit-source-and-host-0",
+    "predicate": "source_reports",
+    "value": "Built kit archives (`package-larena.tar` with sha256 and receipt) are still\npublished as releases of `simai/larena-ui`; Larena's installer and checks\nfetch them there. `simai/ui-admin` stays the reference host and polygon\n(mock API, seeded records of every property type) on which the components are\ntried.",
+    "lifecycle": "reviewed",
+    "confidence": 0.95,
+    "evidence_status": "cited_by_mirai_admission",
+    "source_refs": [
+      "repo://ai-skill-larena@2b7a46bb4f1f407da4b9cf06c69707e8397ea2aa/skills/larena/knowledge/larena-ui-components.md#chars=0-306"
+    ],
+    "source_spans": [
+      {
+        "unit_id": "unit.0e9019a6d2d14db4.6",
+        "source_ref": "repo://ai-skill-larena@2b7a46bb4f1f407da4b9cf06c69707e8397ea2aa/skills/larena/knowledge/larena-ui-components.md",
+        "content_digest": "sha256:d2d14db4fe73fa7a68dbf5b8b4eb2e2fb044d7b57af2523024d6044663e3278a",
+        "start": 0,
+        "end": 306,
+        "quote": "Built kit archives (`package-larena.tar` with sha256 and receipt) are still\npublished as releases of `simai/larena-ui`; Larena's installer and checks\nfetch them there. `simai/ui-admin` stays the reference host and polygon\n(mock API, seeded records of every property type) on which the components are\ntried."
+      }
+    ],
+    "assertion_id": "assertion.cdb62dbad6c885d8ef9e3593169e0fc757676fb15fb8312205fa7c320e2c81d0"
+  },
+  {
+    "id": "object.ordering.larena.2b7a46bb4f.kit-runtime-pins-0",
+    "kind": "documented_source_observation",
+    "title": "Исторический источник навыка Larena: kit-runtime-pins-0",
+    "predicate": "source_reports",
+    "value": "- Root pins a Framework pair: a Framework build id (`ui-…`) plus a kit id\n  (`larena-…`); commits read \"Pin the admin kit larena-<id> over ui-<id>\".\n- The frontend runtime lock pins packages by name; install, update and sealing\n  refuse a runtime whose lock does not cover every declared component set.\n- Kits carry SPDX licence expressions; the admin kit is included in Larena's\n  licence (PolyForm terms apply outside Larena).",
+    "lifecycle": "reviewed",
+    "confidence": 0.95,
+    "evidence_status": "cited_by_mirai_admission",
+    "source_refs": [
+      "repo://ai-skill-larena@2b7a46bb4f1f407da4b9cf06c69707e8397ea2aa/skills/larena/knowledge/larena-ui-components.md#chars=0-428"
+    ],
+    "source_spans": [
+      {
+        "unit_id": "unit.0e9019a61bf1d1a1.8",
+        "source_ref": "repo://ai-skill-larena@2b7a46bb4f1f407da4b9cf06c69707e8397ea2aa/skills/larena/knowledge/larena-ui-components.md",
+        "content_digest": "sha256:1bf1d1a16bac1f48946ccefb8278156e980eb954e903b916d6394cbdbba2875f",
+        "start": 0,
+        "end": 428,
+        "quote": "- Root pins a Framework pair: a Framework build id (`ui-…`) plus a kit id\n  (`larena-…`); commits read \"Pin the admin kit larena-<id> over ui-<id>\".\n- The frontend runtime lock pins packages by name; install, update and sealing\n  refuse a runtime whose lock does not cover every declared component set.\n- Kits carry SPDX licence expressions; the admin kit is included in Larena's\n  licence (PolyForm terms apply outside Larena)."
+      }
+    ],
+    "assertion_id": "assertion.c2b9f01c31ccd0445cd8df94f8056357194244436f983f2e1966ec58f37367a7"
+  },
+  {
+    "id": "object.ordering.larena.2b7a46bb4f.ui-ownership-0",
+    "kind": "documented_source_observation",
+    "title": "Исторический источник навыка Larena: ui-ownership-0",
+    "predicate": "source_reports",
+    "value": "- `$framework` — Framework core, components, kit build and release, docs at\n  ui.simai.io.\n- `$larena` — host side: ports (data view, property view), lookup sources,\n  rights, refusal messages, what the admin shows; Root pins and gates.\n- `$designer` / `$ux` — visual QA and screen structure.",
+    "lifecycle": "reviewed",
+    "confidence": 0.95,
+    "evidence_status": "cited_by_mirai_admission",
+    "source_refs": [
+      "repo://ai-skill-larena@2b7a46bb4f1f407da4b9cf06c69707e8397ea2aa/skills/larena/knowledge/larena-ui-components.md#chars=0-292"
+    ],
+    "source_spans": [
+      {
+        "unit_id": "unit.0e9019a63e386c58.10",
+        "source_ref": "repo://ai-skill-larena@2b7a46bb4f1f407da4b9cf06c69707e8397ea2aa/skills/larena/knowledge/larena-ui-components.md",
+        "content_digest": "sha256:3e386c589406b8033862c17f37888ff78e84e2da6b22d2959778c9f899c8dfae",
+        "start": 0,
+        "end": 292,
+        "quote": "- `$framework` — Framework core, components, kit build and release, docs at\n  ui.simai.io.\n- `$larena` — host side: ports (data view, property view), lookup sources,\n  rights, refusal messages, what the admin shows; Root pins and gates.\n- `$designer` / `$ux` — visual QA and screen structure."
+      }
+    ],
+    "assertion_id": "assertion.ad0edd61d96b06bc656ba094f8050d08bdf56a3833afc9a877c5adc62b738f3d"
+  },
+  {
+    "id": "object.ordering.larena.2b7a46bb4f.owner-decision-boundary-0",
+    "kind": "documented_source_observation",
+    "title": "Исторический источник навыка Larena: owner-decision-boundary-0",
+    "predicate": "source_reports",
+    "value": "Licensing and source-repository choices are owner decisions; record them, do",
+    "lifecycle": "reviewed",
+    "confidence": 0.95,
+    "evidence_status": "cited_by_mirai_admission",
+    "source_refs": [
+      "repo://ai-skill-larena@2b7a46bb4f1f407da4b9cf06c69707e8397ea2aa/skills/larena/knowledge/larena-ui-components.md#chars=0-76"
+    ],
+    "source_spans": [
+      {
+        "unit_id": "unit.0e9019a68e688719.11",
+        "source_ref": "repo://ai-skill-larena@2b7a46bb4f1f407da4b9cf06c69707e8397ea2aa/skills/larena/knowledge/larena-ui-components.md",
+        "content_digest": "sha256:8e6887190c86ea413159feff9eb413e9d4f6a1c66cde5b38e9767e6f8c92848c",
+        "start": 0,
+        "end": 76,
+        "quote": "Licensing and source-repository choices are owner decisions; record them, do"
+      }
+    ],
+    "assertion_id": "assertion.c22d1b9d770b20630a496727ae66544145c827715a4bb9f22bfed6c1b85a5664"
+  },
+  {
+    "id": "object.ordering.larena.2b7a46bb4f.settings-catalog-0",
+    "kind": "documented_source_observation",
+    "title": "Исторический источник навыка Larena: settings-catalog-0",
+    "predicate": "source_reports",
+    "value": "- One `SettingDefinition` model: group, allowed levels, `inherits`, `lockable`,\n  `when` conditions, source, rights. Definitions are validated through\n  `larena/property` (hidden, readonly, hint, conditions honoured).\n- Values are kept **by level** with locale: default → installation → site →\n  sections (page-tree ancestors) → page. Each level value has a revision and\n  an optional lock; a site-level setting refuses a page value.\n- Resolution per page reads one cached per-site snapshot; an explain view\n  shows which level a value came from.\n- Tables: `larena_setting_definitions`, `larena_setting_level_values` (beside\n  the older `larena_setting_values`); the migration copies existing values.\n- Changes go through drafts: publish, discard, revert; history per setting\n  (an archived setting's history is read-only). Definition changes are checked\n  against stored values. Settings take part in SitePack transfer.\n- Admin (under «Настройки»): «Каталог настроек» `/admin/settings/catalog`\n  (custom settings, package overrides, values on every level with source,\n  reset and lock), «Черновики и публикация» `/admin/settings/changes` with a\n  pending-drafts counter, history `/admin/settings/history`; site settings\n  read and write the catalog. Operation: `setting.catalog.manage`.",
+    "lifecycle": "reviewed",
+    "confidence": 0.95,
+    "evidence_status": "cited_by_mirai_admission",
+    "source_refs": [
+      "repo://ai-skill-larena@2b7a46bb4f1f407da4b9cf06c69707e8397ea2aa/skills/larena/knowledge/settings-catalog-and-storage-admin.md#chars=0-1287"
+    ],
+    "source_spans": [
+      {
+        "unit_id": "unit.5e2d713d658a4cab.5",
+        "source_ref": "repo://ai-skill-larena@2b7a46bb4f1f407da4b9cf06c69707e8397ea2aa/skills/larena/knowledge/settings-catalog-and-storage-admin.md",
+        "content_digest": "sha256:658a4cab8e6a355a57930175bcee423a3878e2b877d35ab08fa1f8502a1acaf2",
+        "start": 0,
+        "end": 1287,
+        "quote": "- One `SettingDefinition` model: group, allowed levels, `inherits`, `lockable`,\n  `when` conditions, source, rights. Definitions are validated through\n  `larena/property` (hidden, readonly, hint, conditions honoured).\n- Values are kept **by level** with locale: default → installation → site →\n  sections (page-tree ancestors) → page. Each level value has a revision and\n  an optional lock; a site-level setting refuses a page value.\n- Resolution per page reads one cached per-site snapshot; an explain view\n  shows which level a value came from.\n- Tables: `larena_setting_definitions`, `larena_setting_level_values` (beside\n  the older `larena_setting_values`); the migration copies existing values.\n- Changes go through drafts: publish, discard, revert; history per setting\n  (an archived setting's history is read-only). Definition changes are checked\n  against stored values. Settings take part in SitePack transfer.\n- Admin (under «Настройки»): «Каталог настроек» `/admin/settings/catalog`\n  (custom settings, package overrides, values on every level with source,\n  reset and lock), «Черновики и публикация» `/admin/settings/changes` with a\n  pending-drafts counter, history `/admin/settings/history`; site settings\n  read and write the catalog. Operation: `setting.catalog.manage`."
+      }
+    ],
+    "assertion_id": "assertion.6649ae002fcb0aa8121c13d6099f6d4dea6616512e79c1a82c5353ff8aad4669"
+  },
+  {
+    "id": "object.ordering.larena.2b7a46bb4f.storage-admin-0",
+    "kind": "documented_source_observation",
+    "title": "Исторический источник навыка Larena: storage-admin-0",
+    "predicate": "source_reports",
+    "value": "- Lists `/admin/storage` and per-structure pages `/admin/storage/<id>`,\n  structure settings `/admin/storage/<id>/settings`; a workbench at\n  `/admin/storage-workbench`.\n- Field editor is built from the property type's declared settings; edits\n  that change data count affected records and ask for confirmation\n  (`checkFieldChange()`); edits that touch no data (mask, placeholder, step,\n  unit) need no migration. Searchable, sortable, indexable and encryptable\n  types come from the `larena/property` declaration.\n- Lists default to newest first (system sort key `_created_at`); record search\n  is limited to 100 characters.\n- Field encryption (`larena/secret`): turn on/off for filled fields, rotate and\n  rewrap keys; encrypted fields never go to CSV, are not sortable and never\n  become a list title. Operations include `storage.encryption.manage`,\n  `storage.workbench.record.decrypt`.\n- Transfer: CSV export/import (`storage.export.csv`, `storage.import.plan`,\n  `storage.import.apply`) and storage SitePack export/import\n  (`storage.sitepack.export`, `storage.sitepack.import`: plan first, ids kept\n  or remapped, drafts by default).\n- Record lists can be placed on a site page from the admin.\n- Storage declares names for all its operations (51 on 2026-10-23); roles show\n  human names for every operation.",
+    "lifecycle": "reviewed",
+    "confidence": 0.95,
+    "evidence_status": "cited_by_mirai_admission",
+    "source_refs": [
+      "repo://ai-skill-larena@2b7a46bb4f1f407da4b9cf06c69707e8397ea2aa/skills/larena/knowledge/settings-catalog-and-storage-admin.md#chars=0-1315"
+    ],
+    "source_spans": [
+      {
+        "unit_id": "unit.5e2d713d44c7d4ec.7",
+        "source_ref": "repo://ai-skill-larena@2b7a46bb4f1f407da4b9cf06c69707e8397ea2aa/skills/larena/knowledge/settings-catalog-and-storage-admin.md",
+        "content_digest": "sha256:44c7d4ec0f2a832ec550b164ba9307e38e05b89b645ebc8b10846a4aedfd3641",
+        "start": 0,
+        "end": 1315,
+        "quote": "- Lists `/admin/storage` and per-structure pages `/admin/storage/<id>`,\n  structure settings `/admin/storage/<id>/settings`; a workbench at\n  `/admin/storage-workbench`.\n- Field editor is built from the property type's declared settings; edits\n  that change data count affected records and ask for confirmation\n  (`checkFieldChange()`); edits that touch no data (mask, placeholder, step,\n  unit) need no migration. Searchable, sortable, indexable and encryptable\n  types come from the `larena/property` declaration.\n- Lists default to newest first (system sort key `_created_at`); record search\n  is limited to 100 characters.\n- Field encryption (`larena/secret`): turn on/off for filled fields, rotate and\n  rewrap keys; encrypted fields never go to CSV, are not sortable and never\n  become a list title. Operations include `storage.encryption.manage`,\n  `storage.workbench.record.decrypt`.\n- Transfer: CSV export/import (`storage.export.csv`, `storage.import.plan`,\n  `storage.import.apply`) and storage SitePack export/import\n  (`storage.sitepack.export`, `storage.sitepack.import`: plan first, ids kept\n  or remapped, drafts by default).\n- Record lists can be placed on a site page from the admin.\n- Storage declares names for all its operations (51 on 2026-10-23); roles show\n  human names for every operation."
+      }
+    ],
+    "assertion_id": "assertion.260dcc630b11384a4825b26743663b2d5bc25e35c859e42c23aaf4ca23f2600d"
+  },
+  {
+    "id": "object.ordering.larena.2b7a46bb4f.qa-hooks-0",
+    "kind": "documented_source_observation",
+    "title": "Исторический источник навыка Larena: qa-hooks-0",
+    "predicate": "source_reports",
+    "value": "Root tests that cover these surfaces: `AdminSettingsCatalogTest`,\n`MinimalCmsRootIntegrationTest`, `StorageSectionTest`,\n`DurableBackgroundOperationsSqliteTest` (migration/table counts change with\neach slice — read the current numbers from the test, not",
+    "lifecycle": "reviewed",
+    "confidence": 0.95,
+    "evidence_status": "cited_by_mirai_admission",
+    "source_refs": [
+      "repo://ai-skill-larena@2b7a46bb4f1f407da4b9cf06c69707e8397ea2aa/skills/larena/knowledge/settings-catalog-and-storage-admin.md#chars=0-253"
+    ],
+    "source_spans": [
+      {
+        "unit_id": "unit.5e2d713dd50bdccd.9",
+        "source_ref": "repo://ai-skill-larena@2b7a46bb4f1f407da4b9cf06c69707e8397ea2aa/skills/larena/knowledge/settings-catalog-and-storage-admin.md",
+        "content_digest": "sha256:d50bdccd2383899e7044edd515e4f06e703fa033c27c25230a9d26817767c641",
+        "start": 0,
+        "end": 253,
+        "quote": "Root tests that cover these surfaces: `AdminSettingsCatalogTest`,\n`MinimalCmsRootIntegrationTest`, `StorageSectionTest`,\n`DurableBackgroundOperationsSqliteTest` (migration/table counts change with\neach slice — read the current numbers from the test, not"
+      }
+    ],
+    "assertion_id": "assertion.1e5f05ba291722fcad5c98ed8712aaed4c161204f4c0afeda0445e2ed71d0cb9"
+  },
+  {
+    "id": "object.ordering.larena.2b7a46bb4f.portfolio-counts-0",
+    "kind": "documented_source_observation",
+    "title": "Исторический источник навыка Larena: portfolio-counts-0",
+    "predicate": "source_reports",
+    "value": "**Portfolio (Specs): 44 unique `larena/*` packages** — 31 `pilot`, 13 `draft`.\nNew since the July baseline: `larena/security`, `larena/telephony` (both\n`draft`).",
+    "lifecycle": "reviewed",
+    "confidence": 0.95,
+    "evidence_status": "cited_by_mirai_admission",
+    "source_refs": [
+      "repo://ai-skill-larena@2b7a46bb4f1f407da4b9cf06c69707e8397ea2aa/skills/larena/references/canonical-package-portfolio.md#chars=0-161"
+    ],
+    "source_spans": [
+      {
+        "unit_id": "unit.e3e2846b531bb0d9.8",
+        "source_ref": "repo://ai-skill-larena@2b7a46bb4f1f407da4b9cf06c69707e8397ea2aa/skills/larena/references/canonical-package-portfolio.md",
+        "content_digest": "sha256:531bb0d9032e1d6d542b9503fa63b24976e8a6deb8741216406222009736e977",
+        "start": 0,
+        "end": 161,
+        "quote": "**Portfolio (Specs): 44 unique `larena/*` packages** — 31 `pilot`, 13 `draft`.\nNew since the July baseline: `larena/security`, `larena/telephony` (both\n`draft`)."
+      }
+    ],
+    "assertion_id": "assertion.6472cd1ff7d2438131212c5dd684a592676ec406f960d499495bc5827f3ccf64"
+  },
+  {
+    "id": "object.ordering.larena.2b7a46bb4f.root-assembly-0",
+    "kind": "documented_source_observation",
+    "title": "Исторический источник навыка Larena: root-assembly-0",
+    "predicate": "source_reports",
+    "value": "**Assembly (Root Composer): 26 packages**, all pinned in `composer.lock`;\n`composer.distribution.json` carries the same 26. In `composer.json` eight are\nin `require` (admin auth dataview layout monitoring notification storage ui),\neighteen in `require-dev`.",
+    "lifecycle": "reviewed",
+    "confidence": 0.95,
+    "evidence_status": "cited_by_mirai_admission",
+    "source_refs": [
+      "repo://ai-skill-larena@2b7a46bb4f1f407da4b9cf06c69707e8397ea2aa/skills/larena/references/canonical-package-portfolio.md#chars=0-257"
+    ],
+    "source_spans": [
+      {
+        "unit_id": "unit.e3e2846b15ed428b.11",
+        "source_ref": "repo://ai-skill-larena@2b7a46bb4f1f407da4b9cf06c69707e8397ea2aa/skills/larena/references/canonical-package-portfolio.md",
+        "content_digest": "sha256:15ed428b8783ffc5f6021b8bd3b9c5f7d531e56ac17427576954a22dcc5b2379",
+        "start": 0,
+        "end": 257,
+        "quote": "**Assembly (Root Composer): 26 packages**, all pinned in `composer.lock`;\n`composer.distribution.json` carries the same 26. In `composer.json` eight are\nin `require` (admin auth dataview layout monitoring notification storage ui),\neighteen in `require-dev`."
+      }
+    ],
+    "assertion_id": "assertion.4e9ecce9eff4d00048d0f7f18528e0cefa7c3785fa1296930c3be7a1d491b107"
+  },
+  {
+    "id": "object.ordering.larena.2b7a46bb4f.content-retirement-0",
+    "kind": "documented_source_observation",
+    "title": "Исторический источник навыка Larena: content-retirement-0",
+    "predicate": "source_reports",
+    "value": "`larena/content` is retired by owner decision (2026-09-23, recorded in its\nSpecs DNA): it must not create base records, revisions, site structure or\npublication state — `larena/storage` owns them. Keep `content` only as a\ncompatibility/migration reference.",
+    "lifecycle": "reviewed",
+    "confidence": 0.95,
+    "evidence_status": "cited_by_mirai_admission",
+    "source_refs": [
+      "repo://ai-skill-larena@2b7a46bb4f1f407da4b9cf06c69707e8397ea2aa/skills/larena/references/canonical-package-portfolio.md#chars=0-256"
+    ],
+    "source_spans": [
+      {
+        "unit_id": "unit.e3e2846b54c1fb70.16",
+        "source_ref": "repo://ai-skill-larena@2b7a46bb4f1f407da4b9cf06c69707e8397ea2aa/skills/larena/references/canonical-package-portfolio.md",
+        "content_digest": "sha256:54c1fb70d7f28032d2b0214d5fbb31c39348b57afb2ba906f4947e8d5de9dca3",
+        "start": 0,
+        "end": 256,
+        "quote": "`larena/content` is retired by owner decision (2026-09-23, recorded in its\nSpecs DNA): it must not create base records, revisions, site structure or\npublication state — `larena/storage` owns them. Keep `content` only as a\ncompatibility/migration reference."
+      }
+    ],
+    "assertion_id": "assertion.093d5dd25917f367a7abba078e98dde76549ff65f8ae3e6f84fcd92721ad2be6"
+  },
+  {
+    "id": "object.ordering.larena.2b7a46bb4f.source-lag-1",
+    "kind": "documented_source_observation",
+    "title": "Исторический источник навыка Larena: source-lag-1",
+    "predicate": "source_reports",
+    "value": "- larena `README.md` still says 25 runtime packages of 42;\n- `release/developer-alpha-manifest.json` (release `update-safety-center-2026-08-02`)\n  says portfolio 40, assembly 26, workspace-only 14;\n- Specs say 44. Per the authority order below, Specs and Composer win; report\n  the lag instead of copying any of these numbers into a readiness claim.",
+    "lifecycle": "reviewed",
+    "confidence": 0.95,
+    "evidence_status": "cited_by_mirai_admission",
+    "source_refs": [
+      "repo://ai-skill-larena@2b7a46bb4f1f407da4b9cf06c69707e8397ea2aa/skills/larena/references/canonical-package-portfolio.md#chars=0-349"
+    ],
+    "source_spans": [
+      {
+        "unit_id": "unit.e3e2846b61b86d9b.18",
+        "source_ref": "repo://ai-skill-larena@2b7a46bb4f1f407da4b9cf06c69707e8397ea2aa/skills/larena/references/canonical-package-portfolio.md",
+        "content_digest": "sha256:61b86d9b4a534f16655808742054888cf2a3fcda2020b813025ff9eaa18c697e",
+        "start": 0,
+        "end": 349,
+        "quote": "- larena `README.md` still says 25 runtime packages of 42;\n- `release/developer-alpha-manifest.json` (release `update-safety-center-2026-08-02`)\n  says portfolio 40, assembly 26, workspace-only 14;\n- Specs say 44. Per the authority order below, Specs and Composer win; report\n  the lag instead of copying any of these numbers into a readiness claim."
+      }
+    ],
+    "assertion_id": "assertion.8e6f337fc8cc34a8ba3d4d4e79442cb284e6064087637a48f778e9134d5898ca"
+  },
+  {
+    "id": "object.ordering.larena.2b7a46bb4f.source-lag-2",
+    "kind": "documented_source_observation",
+    "title": "Исторический источник навыка Larena: source-lag-2",
+    "predicate": "source_reports",
+    "value": "This partition is membership evidence, not a production-readiness or\nall-packages-readiness claim. Root itself states it is not production-ready.",
+    "lifecycle": "reviewed",
+    "confidence": 0.95,
+    "evidence_status": "cited_by_mirai_admission",
+    "source_refs": [
+      "repo://ai-skill-larena@2b7a46bb4f1f407da4b9cf06c69707e8397ea2aa/skills/larena/references/canonical-package-portfolio.md#chars=0-145"
+    ],
+    "source_spans": [
+      {
+        "unit_id": "unit.e3e2846bba044782.19",
+        "source_ref": "repo://ai-skill-larena@2b7a46bb4f1f407da4b9cf06c69707e8397ea2aa/skills/larena/references/canonical-package-portfolio.md",
+        "content_digest": "sha256:ba044782d85ba699a6c52de95f46e5a137139c3dd44d8f9094e1619c61a0cbd2",
+        "start": 0,
+        "end": 145,
+        "quote": "This partition is membership evidence, not a production-readiness or\nall-packages-readiness claim. Root itself states it is not production-ready."
+      }
+    ],
+    "assertion_id": "assertion.9af9b4eb994973e5031cdf53483eb3363111045ce2a525a7d6cb38c2a86a2fbd"
+  },
+  {
+    "id": "object.ordering.larena.2b7a46bb4f.authority-order-0",
+    "kind": "documented_source_observation",
+    "title": "Исторический источник навыка Larena: authority-order-0",
+    "predicate": "source_reports",
+    "value": "For a live Larena project, use this order:",
+    "lifecycle": "reviewed",
+    "confidence": 0.95,
+    "evidence_status": "cited_by_mirai_admission",
+    "source_refs": [
+      "repo://ai-skill-larena@2b7a46bb4f1f407da4b9cf06c69707e8397ea2aa/skills/larena/references/canonical-package-portfolio.md#chars=0-42"
+    ],
+    "source_spans": [
+      {
+        "unit_id": "unit.e3e2846be51846c1.26",
+        "source_ref": "repo://ai-skill-larena@2b7a46bb4f1f407da4b9cf06c69707e8397ea2aa/skills/larena/references/canonical-package-portfolio.md",
+        "content_digest": "sha256:e51846c10f1ac973e12c3e0f7c6d3c2a065ab496ba24701203d3be2adfdfebb6",
+        "start": 0,
+        "end": 42,
+        "quote": "For a live Larena project, use this order:"
+      }
+    ],
+    "assertion_id": "assertion.59d2f0844fc125081b25900eecffcf1f913b4b3b6a98409430d2077633394fb5"
+  },
+  {
+    "id": "object.ordering.larena.2b7a46bb4f.legacy-warning-0",
+    "kind": "documented_source_observation",
+    "title": "Исторический источник навыка Larena: legacy-warning-0",
+    "predicate": "source_reports",
+    "value": "> Статус: справка эпохи SIMAI Laravel (пакеты `simai/*`, до `larena/*`). Сверка 2026-10-23: `simaiCrud`, `simai:install`, `EntityConfig`, `config/simai_<module>.php` в текущих пакетах larena-workspace не найдены; текущие имена — команды `larena:*`, конфиги `config/larena-<package>.php`. Метод годится, имена и пути — только для старых проектов и миграции; текущий состав пакетов — [canonical-package-portfolio](../../references/canonical-package-portfolio.md).",
+    "lifecycle": "reviewed",
+    "confidence": 0.95,
+    "evidence_status": "cited_by_mirai_admission",
+    "source_refs": [
+      "repo://ai-skill-larena@2b7a46bb4f1f407da4b9cf06c69707e8397ea2aa/skills/larena/knowledge/laravel/eloquent.md#chars=0-461"
+    ],
+    "source_spans": [
+      {
+        "unit_id": "unit.eb5ca61c8104c1b9.2",
+        "source_ref": "repo://ai-skill-larena@2b7a46bb4f1f407da4b9cf06c69707e8397ea2aa/skills/larena/knowledge/laravel/eloquent.md",
+        "content_digest": "sha256:8104c1b9b5e545ae1b1c67a3b719ae381cfcb65192dd7685ab4b1795e40c74f7",
+        "start": 0,
+        "end": 461,
+        "quote": "> Статус: справка эпохи SIMAI Laravel (пакеты `simai/*`, до `larena/*`). Сверка 2026-10-23: `simaiCrud`, `simai:install`, `EntityConfig`, `config/simai_<module>.php` в текущих пакетах larena-workspace не найдены; текущие имена — команды `larena:*`, конфиги `config/larena-<package>.php`. Метод годится, имена и пути — только для старых проектов и миграции; текущий состав пакетов — [canonical-package-portfolio](../../references/canonical-package-portfolio.md)."
+      }
+    ],
+    "assertion_id": "assertion.3a34a8e4a6f41ce87ed498529a66ad14c972a776e976fd50125c59d2a3e155d0"
+  },
+  {
+    "id": "object.ordering.larena.2b7a46bb4f.knowledge-resolution-0",
+    "kind": "documented_source_observation",
+    "title": "Исторический источник навыка Larena: knowledge-resolution-0",
+    "predicate": "source_reports",
+    "value": "An activity's `knowledge_packs` name resolves to `knowledge/<name>.md`; the\nindex of the single knowledge layer is [../knowledge/README.md](../knowledge/README.md).",
+    "lifecycle": "reviewed",
+    "confidence": 0.95,
+    "evidence_status": "cited_by_mirai_admission",
+    "source_refs": [
+      "repo://ai-skill-larena@2b7a46bb4f1f407da4b9cf06c69707e8397ea2aa/skills/larena/rules/routing.md#chars=192-356"
+    ],
+    "source_spans": [
+      {
+        "unit_id": "unit.57240524b9720443.10",
+        "source_ref": "repo://ai-skill-larena@2b7a46bb4f1f407da4b9cf06c69707e8397ea2aa/skills/larena/rules/routing.md",
+        "content_digest": "sha256:b9720443bf592b40ae588f7fe8ab9868f5f09c6c0efaaec7dd5f73e2d35cfe97",
+        "start": 192,
+        "end": 356,
+        "quote": "An activity's `knowledge_packs` name resolves to `knowledge/<name>.md`; the\nindex of the single knowledge layer is [../knowledge/README.md](../knowledge/README.md)."
+      }
+    ],
+    "assertion_id": "assertion.d93ac805afd748d0d9c42047f367d8ad92464d690136254ad22c5c686c21f381"
+  }
+]
