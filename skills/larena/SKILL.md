@@ -1,6 +1,6 @@
 ---
 name: larena
-description: "Larena: SIMAI CMS на Laravel. Приложение и пакеты larena/*, модульная админка, установщик, обновления, лицензирование, SitePack, REST/API, настройки, layout, поиск, миграции с Bitrix, QA."
+description: "Larena: SIMAI CMS на Laravel. Владелец работы в репозиториях larena, larena-workspace, larena-specs и пакетах larena/*: приложение, модульная админка, установщик, обновления, лицензирование, SitePack, REST/API, настройки, layout, поиск, миграции с Bitrix, QA. Общая Laravel-разработка вне правил Larena — `dev`."
 ---
 
 # Larena
